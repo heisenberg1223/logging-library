@@ -51,12 +51,10 @@ namespace LOG {
     std::cout << desc << '\n';
   }
 
-#ifdef DEBUG
   inline static void DEBUG_INFO(std::string desc) noexcept {
     std::cout << ANSI_GREEN << "DEBUG INFO: -- " << END_ANSI;
     std::cout << desc << '\n';
   };
-#endif
 };
 
 #endif
